@@ -13,7 +13,7 @@
   <!-- PACE Progress Bar START -->
 
   
-  <title>归档: 2018 | ����</title>
+  <title>归档: 2018 | RECIVIER</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -22,16 +22,16 @@
   <meta name="description" content="��Ȼ�� ������Ȼ�� ��������">
 <meta name="keywords" content="���� �Ƽ� ������ δ�� ����">
 <meta property="og:type" content="website">
-<meta property="og:title" content="����">
+<meta property="og:title" content="RECIVIER">
 <meta property="og:url" content="https://reciv.github.io/archives/2018/index.html">
-<meta property="og:site_name" content="����">
+<meta property="og:site_name" content="RECIVIER">
 <meta property="og:description" content="��Ȼ�� ������Ȼ�� ��������">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="����">
+<meta name="twitter:title" content="RECIVIER">
 <meta name="twitter:description" content="��Ȼ�� ������Ȼ�� ��������">
   
-    <link rel="alternate" href="/atom.xml" title="����" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="RECIVIER" type="application/atom+xml">
   
   <link rel="icon" href="/css/images/favicon.ico">
   
@@ -56,8 +56,6 @@
   <link rel="stylesheet" href="/css/hiero.css" >
   <link rel="stylesheet" href="/css/glyphs.css" >
   
-    <link rel="stylesheet" href="/css/vdonate.css" >
-  
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/css/my.css">
@@ -65,7 +63,7 @@
   <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
   <script>
       (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-0123456789ABCDEF",
+          google_ad_client: "",
           enable_page_level_ads: true
       });
   </script>
@@ -96,7 +94,9 @@ var themeMenus = {};
 
           <h1 class="site-title">
             
-              <a href="/" title="����" rel="home"> ���� </a>
+              <a href="/" rel="home" >
+                <img style="margin-bottom: 10px;"  width="200px" height="63px" alt="Hike News" src=" /css/images/mylogo.jpg">
+              </a>
             
           </h1>
 
@@ -257,42 +257,19 @@ var themeMenus = {};
     <div class="widget-wrap" style="margin: 20px 0;">
 	<div id="search-form-wrap">
 
-    <form class="search-form">
-        <label style="width: 75%;">
-            <span class="screen-reader-text">Search for:</span>
-            <input type="search" class="search-field" style="height: 42px;" placeholder=" 搜索…" value="" name="s" title="Search for:">
-        </label>
-        <input type="submit" class="search-form-submit" value="搜索">
-    </form>
-    <div class="ins-search">
-    <div class="ins-search-mask"></div>
-    <div class="ins-search-container">
-        <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="请输入关键词..."/>
-            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
-        </div>
-        <div class="ins-section-wrapper">
-            <div class="ins-section-container"></div>
-        </div>
-    </div>
-</div>
+    <form class="search-form" method="GET" action="https://www.baidu.com/s?">
+    <input name="wd" type="text" class="search-form-input" style="height: 42px; width: 75%;" placeholder="搜索..." />
+    <button type="submit" class="search-form-submit">搜索</button>
+</form>
 <script>
-(function (window) {
-    var INSIGHT_CONFIG = {
-        TRANSLATION: {
-            POSTS: '文章',
-            PAGES: '页面',
-            CATEGORIES: '分类',
-            TAGS: '标签',
-            UNTITLED: '(无标题)',
-        },
-        ROOT_URL: '/',
-        CONTENT_URL: '/content.json',
-    };
-    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
-})(window);
+(function ($) {
+    $('.search-form').on('submit', function (e) {
+        var keyword = $('.search-form-input[name="wd"]').val();
+        window.location = 'https://www.baidu.com/s?wd=site:reciv.github.io ' + keyword;
+        return false;
+    });
+})(jQuery);
 </script>
-<script src="/js/insight.js"></script>
 
 </div>
 </div>
@@ -305,11 +282,11 @@ var themeMenus = {};
     	<ul class="clearfix widget-social-icons">   
     	
           
-     			  <li><a href="https://github.com/iTimeTraveler" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
+     			  <li><a href="https://github.com/reciv" title="Github"><i class="fa fa-github" aria-hidden="true"></i></a></li> 
           
    		
           
-     			  <li><a href="http://www.yoursite.com" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
+     			  <li><a href="" title="Weibo"><i class="fa fa-weibo" aria-hidden="true"></i></a></li> 
           
    		
           
@@ -455,12 +432,7 @@ var themeMenus = {};
 
   <div class="clearfix container">
       <div class="site-info">
-	      &copy; 2018 ���� All Rights Reserved.
-          
-            <span id="busuanzi_container_site_uv">
-              本站访客数<span id="busuanzi_value_site_uv"></span>人次  
-              本站总访问量<span id="busuanzi_value_site_pv"></span>次
-            </span>
+	      &copy; 2018 RECIVIER All Rights Reserved.
           
       </div>
       <div class="site-credit">
@@ -543,14 +515,6 @@ var themeMenus = {};
 
 
 
-  <div style="display: none;">
-    <script src="https://s95.cnzz.com/z_stat.php?id=1260716016&web_id=1260716016" language="JavaScript"></script>
-  </div>
-
-
-
-	<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-	</script>
 
 
 
